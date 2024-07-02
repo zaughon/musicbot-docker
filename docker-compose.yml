@@ -1,0 +1,8 @@
+# version: '2'
+
+services:
+    musicbot:
+        build: ./
+        image: musicbot
+        volumes:
+            - ./config.txt:/jmb/config/config.txt
