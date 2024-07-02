@@ -1,3 +1,5 @@
+# Zaughon Musicbot (metalbot)
 
+Slightly modified version of https://github.com/craumix/jmb-container
 
-docker run --restart unless-stopped -v ./config.txt:/jmb/config/config.txt musicbot:latest
+Mainly just as a Docker learning experience..

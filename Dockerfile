@@ -16,4 +16,6 @@ RUN chmod +x /jmb/docker-entry.sh
 
 VOLUME /jmb/config
 
+STOPSIGNAL SIGINT
+
 ENTRYPOINT ["/jmb/docker-entry.sh"]

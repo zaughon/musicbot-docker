@@ -1,8 +1,10 @@
-# version: '2'
+# version: '3'
 
 services:
     musicbot:
         build: ./
         image: musicbot
+        container_name: musicbot
         volumes:
             - ./config.txt:/jmb/config/config.txt
+        restart: unless-stopped
