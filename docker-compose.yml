@@ -6,5 +6,5 @@ services:
         image: musicbot
         container_name: musicbot
         volumes:
-            - ./config.txt:/jmb/config/config.txt
+            - ./config:/jmb/config
         restart: unless-stopped

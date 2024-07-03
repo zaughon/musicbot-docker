@@ -1,4 +1,10 @@
-config.txt
 *-old*
 *old-*
+*temp*
 *test*
+config.txt
+
+# Ignore everything in the config folder
+config/*
+# but keep the folder
+!config/.gitkeep
