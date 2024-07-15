@@ -2,8 +2,12 @@ version: '3'
 
 services:
     musicbot:
-        build: ./
-        image: musicbot
+        env_file: .env
+        build:
+            context: ./
+            args:
+                JMB_VERSION: ${JMB_VERSION:-0.4.2}
+        image: musicbot-${JMB_VERSION:-0.4.2}
         container_name: ${NAME:-musicbot}
         volumes:
             - ./config:/jmb/config
