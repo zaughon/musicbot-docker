@@ -4,7 +4,7 @@ services:
     musicbot:
         build: ./
         image: musicbot
-        container_name: musicbot
+        container_name: ${NAME:-musicbot}
         volumes:
             - ./config:/jmb/config
         restart: unless-stopped
