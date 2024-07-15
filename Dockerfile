@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 # Based on https://github.com/craumix/jmb-container/tree/master
 
-ENV JMB_VERSION 0.4.1
+ENV JMB_VERSION 0.4.2
 
 RUN apt-get update
 RUN apt-get install --yes openjdk-11-jre
